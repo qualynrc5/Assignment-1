@@ -57,12 +57,3 @@ for item in results:
     print(f"{item['name']} ({item['matches']} match(es))")
 
 
-# DESIGN MEMO
-# 1. What core operations did you use (e.g., intersections, loops)? Why?
-#    - I used loops to iterate over each product and the set intersection operation to find the number
-#      of matching tags between customer preferences and product tags. Sets were used to avoid duplicates
-#      and make membership checks fast.
-# 2. How might this code change if you had 1000+ products?
-#    - For large datasets, iterating over every product could become slow. Optimizations might include
-#      indexing products by tags in a dictionary, using a database, or implementing more advanced
-#      recommendation algorithms to handle bigger catalogs efficiently.
